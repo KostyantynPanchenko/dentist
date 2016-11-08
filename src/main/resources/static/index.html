@@ -60,7 +60,7 @@
 	<div class="w3-content w3-container w3-padding-64" id="about">
 		<h3 class="w3-center">ПРО ЛІКАРЯ</h3>		
 		<p class="w3-justify"><b class="w3-text-black">Алексійчук Ірина Юріївна</b>, практикуючий лікар стоматолог-терапевт, стоматолог-хірург, стоматолог-гігієніст, лікар пародонтолог, дитячий лікар. Здійснює прийом пацієнтів у стоматологічному центрі <a href="#contacts">"Святодент"<a/>.</p>
-		<p class="w3-justify">З 2003 по 2008 навчалась в НМУ імені О.О.Богомольця. У 2012 - отримала спеціалізацію "Терапевтична стоматологія" на базі Військово-медичної академії. В грудні 2015 вступила на заочну аспірантуру Київського медичного університету УАНМ на кафедру терапевтичної стоматології.</p></p>
+		<p class="w3-justify">З 2003 по 2008 навчалась в НМУ імені О.О.Богомольця. У 2012 - отримала спеціалізацію "Терапевтична стоматологія" на базі Військово-медичної академії. В грудні 2015 вступила на заочну аспірантуру Київського медичного університету УАНМ на кафедру терапевтичної стоматології.</p>
 		
 		<p id="eduMore" onclick="showEdu(this)" class="w3-hover-light-grey"><b>Натисніть щоб дізнатись про курси...</b></p>		
 		<div id="education" class="w3-light-grey w3-hide">
@@ -225,8 +225,27 @@
 	</footer>
 	 
 	<!-- Add Google Maps -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/main.js"></script>
+	<!--script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/main.js"></script-->
+	
+	<script>
+      function initMap() {
+        var uluru = {lat: 50.455128, lng: 230.376952};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1reMf-jjgha7NXk5QaWzl2wxGkhyLfug&callback=initMap">
+    </script>
+	
+	
 </body>
 </html>
 
