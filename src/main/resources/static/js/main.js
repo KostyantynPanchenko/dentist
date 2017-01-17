@@ -1,4 +1,4 @@
-
+/*
 // Add smooth scrolling to all links in navbar + footer link
  $("#myNavbar a").on('click', function(event) {
 
@@ -22,6 +22,7 @@
 		});
 	} // End if 
  });
+ */
 
 var myCenter = new google.maps.LatLng(50.455128, 30.376952);
 
