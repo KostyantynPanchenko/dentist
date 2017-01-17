@@ -54,3 +54,34 @@
 2017-01-17 20:27:29.425  INFO 6704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-01-17 20:27:29.425  INFO 6704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-01-17 20:27:29.458  INFO 6704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2017-01-17 21:19:02.067  INFO 6704 --- [RMI TCP Connection(2)-192.168.1.6] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-01-17 21:19:02.068  INFO 6704 --- [RMI TCP Connection(2)-192.168.1.6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf0d49: startup date [Tue Jan 17 20:27:11 EET 2017]; root of context hierarchy
+2017-01-17 21:19:02.074  INFO 6704 --- [RMI TCP Connection(2)-192.168.1.6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-01-17 21:19:14.355  INFO 1604 --- [main] gmail.dentist.web.DentistApplication     : Starting DentistApplication on Mazefaka with PID 1604 (D:\workspace\dentist\target\classes started by Kostyantyn in D:\workspace\dentist)
+2017-01-17 21:19:14.359  INFO 1604 --- [main] gmail.dentist.web.DentistApplication     : No active profile set, falling back to default profiles: default
+2017-01-17 21:19:14.446  INFO 1604 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf0d49: startup date [Tue Jan 17 21:19:14 EET 2017]; root of context hierarchy
+2017-01-17 21:19:15.911  INFO 1604 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-01-17 21:19:15.939  INFO 1604 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-01-17 21:19:16.488  INFO 1604 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-01-17 21:19:16.502  INFO 1604 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-01-17 21:19:16.504  INFO 1604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-01-17 21:19:16.630  INFO 1604 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-01-17 21:19:16.632  INFO 1604 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2190 ms
+2017-01-17 21:19:16.828  INFO 1604 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-01-17 21:19:16.833  INFO 1604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-01-17 21:19:16.835  INFO 1604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-01-17 21:19:16.835  INFO 1604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-01-17 21:19:16.835  INFO 1604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-01-17 21:19:17.187  INFO 1604 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bf0d49: startup date [Tue Jan 17 21:19:14 EET 2017]; root of context hierarchy
+2017-01-17 21:19:17.316  INFO 1604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-01-17 21:19:17.317  INFO 1604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-01-17 21:19:17.350  INFO 1604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-17 21:19:17.351  INFO 1604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-17 21:19:17.403  INFO 1604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-17 21:19:17.435  INFO 1604 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-01-17 21:19:17.597  INFO 1604 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-01-17 21:19:17.668  INFO 1604 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-01-17 21:19:17.674  INFO 1604 --- [main] gmail.dentist.web.DentistApplication     : Started DentistApplication in 3.926 seconds (JVM running for 4.51)
+2017-01-17 21:23:46.169  INFO 1604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-01-17 21:23:46.170  INFO 1604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-01-17 21:23:46.193  INFO 1604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms

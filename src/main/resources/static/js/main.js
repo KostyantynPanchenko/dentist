@@ -1,4 +1,3 @@
-/*
 // Add smooth scrolling to all links in navbar + footer link
  $("#myNavbar a").on('click', function(event) {
 
@@ -22,13 +21,12 @@
 		});
 	} // End if 
  });
- */
 
 function initMap() {
 	var uluru = {lat: 50.455128, lng: 30.376952};
     
 	var map = new google.maps.Map(document.getElementById('googleMap'), {
-		zoom: 13,
+		zoom: 16,
 		center: uluru
     });
     
