@@ -19,9 +19,15 @@
 		// Add hash (#) to URL when done scrolling (default click behavior)
 		window.location.hash = hash;
 		});
-	} // End if 
+	}
  });
+ 
+// Add year to copyright
+var txt = $("#copyright").text();
+var year = new Date().getFullYear().toString(); 
+$("#copyright").text(txt + year);
 
+// Initialize Google maps
 function initMap() {
 	var uluru = {lat: 50.455128, lng: 30.376952};
     
@@ -42,7 +48,7 @@ function onClick(element) {
 	 document.getElementById("modal01").style.display = "block";
 }
 
-//opens navbar in mobile mode
+// Opens navbar in mobile mode
 function nav() {
 	var x = document.getElementById("mobileNav");
 	if (x.className.indexOf("w3-show") == -1) {
@@ -51,13 +57,15 @@ function nav() {
 		x.className = x.className.replace(" w3-show", "");
 	}
 }
-		
+
+// Opens education section		
 function showEdu(elem) {	
 	var x = document.getElementById("education");		
 	x.className = x.className.replace(" w3-hide", "");			
 	elem.className += " w3-hide";						
 }
-		
+
+// Closes education section		
 function closeEdu(elem) {
 	x = document.getElementById("eduMore");
 	x.className = x.className.replace(" w3-hide", "");
