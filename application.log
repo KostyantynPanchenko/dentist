@@ -5307,3 +5307,33 @@ subject: Больно мне, больно
 2017-01-19 19:43:37.747  INFO 1508 --- [RMI TCP Connection(2)-192.168.1.6] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2017-01-19 19:43:37.747  INFO 1508 --- [RMI TCP Connection(2)-192.168.1.6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efbca5a: startup date [Thu Jan 19 19:41:28 EET 2017]; root of context hierarchy
 2017-01-19 19:43:37.749  INFO 1508 --- [RMI TCP Connection(2)-192.168.1.6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-01-19 19:44:30.643  INFO 96 --- [main] gmail.dentist.web.DentistApplication     : Starting DentistApplication on Mazefaka with PID 96 (D:\workspace\dentist\target\classes started by Kostyantyn in D:\workspace\dentist)
+2017-01-19 19:44:30.648  INFO 96 --- [main] gmail.dentist.web.DentistApplication     : No active profile set, falling back to default profiles: default
+2017-01-19 19:44:30.729  INFO 96 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efbca5a: startup date [Thu Jan 19 19:44:30 EET 2017]; root of context hierarchy
+2017-01-19 19:44:32.676  INFO 96 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-01-19 19:44:32.690  INFO 96 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-01-19 19:44:32.691  INFO 96 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-01-19 19:44:32.818  INFO 96 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-01-19 19:44:32.819  INFO 96 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2095 ms
+2017-01-19 19:44:32.999  INFO 96 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-01-19 19:44:33.006  INFO 96 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-01-19 19:44:33.007  INFO 96 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-01-19 19:44:33.007  INFO 96 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-01-19 19:44:33.008  INFO 96 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-01-19 19:44:33.439  INFO 96 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efbca5a: startup date [Thu Jan 19 19:44:30 EET 2017]; root of context hierarchy
+2017-01-19 19:44:33.582  INFO 96 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/send-a-note],methods=[POST]}" onto public java.util.concurrent.Callable<java.lang.String> gmail.dentist.web.controller.HomeController.home(javax.servlet.http.HttpServletRequest)
+2017-01-19 19:44:33.587  INFO 96 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-01-19 19:44:33.590  INFO 96 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-01-19 19:44:33.638  INFO 96 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-19 19:44:33.640  INFO 96 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-19 19:44:33.696  INFO 96 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-19 19:44:33.734  INFO 96 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-01-19 19:44:33.903  INFO 96 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-01-19 19:44:33.992  INFO 96 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-01-19 19:44:33.998  INFO 96 --- [main] gmail.dentist.web.DentistApplication     : Started DentistApplication in 3.902 seconds (JVM running for 4.483)
+2017-01-19 19:44:36.636  INFO 96 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-01-19 19:44:36.636  INFO 96 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-01-19 19:44:36.658  INFO 96 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-01-19 19:45:36.641  INFO 96 --- [RMI TCP Connection(2)-192.168.1.6] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-01-19 19:45:36.642  INFO 96 --- [RMI TCP Connection(2)-192.168.1.6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efbca5a: startup date [Thu Jan 19 19:44:30 EET 2017]; root of context hierarchy
+2017-01-19 19:45:36.644  INFO 96 --- [RMI TCP Connection(2)-192.168.1.6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

@@ -10,11 +10,15 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import gmail.dentist.web.controller.HomeController;
-
+/**
+ * MailService implementation.
+ * @author Kostyantyn Panchenko
+ * @since 19.01.2017
+ * @version 1.0
+ */
 @Service
 public class MailServiceImpl implements MailService {
-    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);    
+    private static final Logger logger = LoggerFactory.getLogger(MailServiceImpl.class);    
     
     private JavaMailSender mailSender;
     
@@ -36,9 +40,10 @@ public class MailServiceImpl implements MailService {
         
         StringBuilder text = new StringBuilder("Ви отримали лист від ").append(name)
                 .append(", email: ").append(from)
-                .append("\n")
+                .append("\n\n")
                 .append("Тема: ").append(subject)
-                .append("\n\n").append(message);
+                .append("\n\n")
+                .append(message);
         
         SimpleMailMessage email = new SimpleMailMessage();
         email.setTo(address);

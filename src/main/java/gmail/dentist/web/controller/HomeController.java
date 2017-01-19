@@ -18,8 +18,8 @@ import gmail.dentist.web.service.MailService;
 /**
  * Core controller class.
  * @author Kostyantyn Panchenko
- * @since 08.11.2016
- * @version 1.0
+ * @since 19.01.2017
+ * @version 2.0
  */
 @Controller
 public class HomeController {

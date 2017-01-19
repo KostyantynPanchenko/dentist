@@ -8,6 +8,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
+/**
+ * Mail sender configuration class.
+ * @author Kostyantyn Panchenko
+ * @since 19.01.2017
+ * @version 1.0
+ */
 @Configuration
 public class MailConfig {       
     
