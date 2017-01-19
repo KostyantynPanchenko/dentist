@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iryna Aleksiychuk MD</title>
+	<meta http-equiv="refresh" content="6;url=../index.html" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">		
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">  	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+</head>
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top unselectable">	
+		
+		<ul id="myNavbar" class="w3-navbar w3-left-align w3-card-2 w3-white">
+			<li class="w3-hide-medium w3-hide-large w3-opennav w3-right"><a href="javascript:void(0);" onclick="nav()"><i class="fa fa-bars"></i></a></li>		
+			<li><a href="index.html" class="w3-hover-blue"><i class="fa fa-home"></i></a></li>
+			<li class="w3-hide-small"><a href="index.html#about" class="w3-hover-teal"><i class="fa fa-user"></i> <b>ПРО ЛІКАРЯ</b></a></li>
+			<li class="w3-hide-small"><a href="index.html#portfolio" class="w3-hover-teal"><i class="fa fa-th"></i> <b>ДО ТА ПІСЛЯ</b></a></li>			
+			<li class="w3-hide-small"><a href="index.html#contacts" class="w3-hover-teal"><i class="fa fa-envelope"></i> <b>КОНТАКТИ</b></a></li>
+			<li class="w3-hide-small w3-dropdown-hover"><a href="#" class="w3-hover-teal"><b>МЕДІА  <i class="fa fa-caret-down"></i></b></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="articles.html" class="w3-hover-orange">Публікації</a>
+					<a href="#" class="w3-hover-yellow">Дипломи</a>
+				</div>
+			</li>
+			<li class="w3-hide-small w3-right"><img src="../img/logo.png" style="max-height:42px" class="w3-right"></li>			
+		</ul>
+
+		<div id="mobileNav" class="w3-hide w3-hide-large w3-hide-medium w3-light-grey w3-text-black">
+			<ul class="w3-navbar w3-left-align w3-small">
+				<li><a href="index.html#about"><i class="fa fa-user"></i> <b>ПРО ЛІКАРЯ</b></a></li>
+				<li><a href="index.html#portfolio"><i class="fa fa-th"></i> <b>ДО ТА ПІСЛЯ</b></a></li>
+				<li><a href="index.html#contacts"><i class="fa fa-envelope"></i> <b>КОНТАКТИ</b></a></li>
+				<div class="w3-dropdown-hover">
+				<li><a href="#"><b>МЕДІА  <i class="fa fa-caret-down"></i></b></a>
+					<div class="w3-dropdown-content w3-white w3-card-4">
+						<a href="articles.html">Публікації</a>
+						<a href="#">Дипломи</a>
+					</div>
+				</li>
+				</div>
+			</ul>
+		</div>	
+		
+	</div>
+	
+	<div id="mid" class="w3-container unselectable w3-padding-64">
+		<div class="w3-display-middle w3-text-dark-grey w3-center">
+			<div class="w3-hide-small">
+				<p style="font-size:120px"><b>
+					<span class="w3-tag w3-red">5</span>
+					<span class="w3-tag">0</span>
+					<span class="w3-tag w3-yellow">0</span>
+				</b></p>
+			</div>		
+			<div class="w3-tag w3-round w3-orange w3-hide-small" style="padding:10px">
+				<div class="w3-tag w3-xxlarge w3-round w3-orange w3-border w3-border-white">
+					<b>НА СЕРВЕРІ ВИНИКЛА ПОМИЛКА</b>
+				</div>
+			</div>			
+			<p class="w3-center w3-padding-large w3-hide-small w3-large"><b><span>Вас буде перенаправлено на головну сторінку через&nbsp;</span><span id="counter">5</span>c</b></p>
+						
+			<div class="w3-hide-large w3-hide-medium">
+				<p class="w3-xxlarge"><b>
+					<span class="w3-tag w3-red">5</span>
+					<span class="w3-tag">0</span>
+					<span class="w3-tag w3-yellow">0</span>
+				</b></p>
+			<div>
+			<div class="w3-tag w3-round w3-orange w3-hide-large w3-hide-demium" style="padding:10px">
+				<div class="w3-tag w3-large w3-round w3-orange w3-border w3-border-white">
+					<b>НА СЕРВЕРІ ВИНИКЛА ПОМИЛКА</b>
+				</div>
+			</div>			
+			<p class="w3-center w3-small w3-padding w3-light-teal w3-hide-large w3-hide-medium"><b><span>Вас буде перенаправлено на головну сторінку</span></b></p>			
+		</div>
+	</div>
+	 
+	<script>
+		document.onreadystatechange = function(){
+			if (document.readyState === "complete"){								
+				var i = 5;			
+				var timer = setInterval(function(){ 
+					document.getElementById("counter").innerHTML = --i;			
+					if (i == 0) {
+						clearInterval(timer);
+					}
+				}, 1000);					
+			}
+		}		
+	</script>
+<body>
+</html>

@@ -31,12 +31,14 @@ public class MailServiceImpl implements MailService {
     }
     
     @Override
-    public void sendMail(HttpServletRequest request) {
+    public void sendMail(HttpServletRequest request) {        
         String name = request.getParameter("name");        
         String from = request.getParameter("from");
         String subject = request.getParameter("subject");
         String message = request.getParameter("message");
         String address = env.getProperty("mail.username");
+        
+        validateRequest(name, from, subject, message);
         
         StringBuilder text = new StringBuilder("Ви отримали лист від ").append(name)
                 .append(", email: ").append(from)
@@ -57,6 +59,16 @@ public class MailServiceImpl implements MailService {
                             .append("from: ").append(from).append("\n")
                             .append("subject: ").append(subject);
         logger.info(sb.toString());
+    }
+
+    private void validateRequest(String name, String from, String subject, String message) {
+        if (name.trim().length() == 0 && from.trim().length() == 0 && subject.trim().length() == 0 && message.trim().length() == 0) {
+            throw new IllegalArgumentException("All fields are required!");
+        }
+        
+        if (from.trim().length() < 6) {
+            throw new IllegalArgumentException("Invalid email address ");
+        }       
     }
 
 }
