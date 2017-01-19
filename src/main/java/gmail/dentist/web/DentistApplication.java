@@ -11,11 +11,17 @@ package gmail.dentist.web;
  */
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.PropertySource;
+
+import gmail.dentist.web.config.MailConfig;
 
 @SpringBootApplication
+@Import(MailConfig.class)
+@PropertySource("classpath:mail.properties")
 public class DentistApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DentistApplication.class, args);
-	}
+	}	
 }

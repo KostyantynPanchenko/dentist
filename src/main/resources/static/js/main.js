@@ -71,3 +71,13 @@ function closeEdu(elem) {
 	x.className = x.className.replace(" w3-hide", "");
 	elem.className += " w3-hide";
 }
+
+function openMail() {
+	console.log("opening modeal");
+	document.getElementById('send-a-note').style.display='block';	
+	document.getElementById("myForm").reset();	
+}
+
+function closeMail() {
+	document.getElementById('send-a-note').style.display='none';
+}
