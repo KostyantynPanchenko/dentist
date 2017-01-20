@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Iryna Aleksiychuk MD</title>
-	<meta http-equiv="refresh" content="6;url=index.html" />
+	<!--meta http-equiv="refresh" content="6;url=index.html" /-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">		
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">  	
@@ -51,26 +51,19 @@
 	
 	<div id="mid" class="w3-container unselectable w3-padding-64">
 		<div class="w3-display-middle w3-text-dark-grey w3-center w3-padding-xxlarge">
-			<p class="w3-center w3-padding-large w3-hide-small w3-xxlarge w3-wide "><b><span>Лист успішно відправлений!</span></b></p>
-			<p class="w3-center w3-padding-large w3-hide-small w3-xxlarge w3-wide "><b><span>Вас буде перенаправлено на головну сторінку через&nbsp;</span><span id="counter">5</span>c</b></p>
-			<p class="w3-center w3-padding w3-light-teal w3-hide-large w3-hide-medium w3-tiny"><b><span>Kист успішно відправлений!</span></b></p>			
-			<p class="w3-center w3-padding w3-light-teal w3-hide-large w3-hide-medium w3-tiny"><b><span>Вас буде перенаправлено на головну сторінку.</span></b></p>			
+			<b>
+			<p><i class="fa fa-check w3-text-green w3-jumbo"></i></p>
+			<p class="w3-center w3-padding-large w3-hide-small w3-xxlarge"><span>Лист успішно відправлений!</span></p>
+			<p class="w3-center w3-padding-large w3-hide-small w3-large"><span>Вас буде перенаправлено на головну сторінку через&nbsp;</span><span id="counter">5</span>c.</p>
+			<p class="w3-center w3-padding w3-hide-large w3-hide-medium w3-large"><span>Лист успішно відправлений!</span></p>			
+			<p class="w3-center w3-padding w3-hide-large w3-hide-medium w3-tiny"><span>Вас буде перенаправлено на головну сторінку.</span></p>			
+			</b>
 		</div>
 	</div>
-	
-	<!-- Footer -->
-	<footer class="w3-center w3-teal w3-padding-32">
-		<p id="copyright">Iryna Aleksiychuk &copy; </p>
-	</footer>
 	 
 	<script>
 		document.onreadystatechange = function(){
-			if (document.readyState === "complete"){
-				var h = window.innerHeight;			
-				document.getElementById("mid").style.minHeight = (h-86) + "px";
-				
-				document.getElementById("copyright").innerHTML += new Date().getFullYear().toString();
-				
+			if (document.readyState === "complete"){				
 				var i = 5;			
 				var timer = setInterval(function(){ 
 					document.getElementById("counter").innerHTML = --i;			
@@ -79,12 +72,7 @@
 					}
 				}, 1000);					
 			}
-		}
-		
-		window.onresize = function() {
-			var h = window.innerHeight;			
-			document.getElementById("mid").style.minHeight = (h-86) + "px";
-		} 			
+		}			
 	</script>
 <body>
 </html>
