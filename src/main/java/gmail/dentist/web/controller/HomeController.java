@@ -7,8 +7,6 @@ import java.util.concurrent.Callable;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +21,6 @@ import gmail.dentist.web.service.MailService;
  */
 @Controller
 public class HomeController {
-    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
     
     @Autowired
     private MailService mailService;
@@ -37,8 +34,7 @@ public class HomeController {
                     mailService.sendMail(request);
                     view = "redirect:/mail-sent-successfully.html";
                 } catch (Exception e) {
-                    view = "redirect:/mail-sending-error.html";
-                    logger.error(e.getMessage());
+                    view = "redirect:/mail-sending-error.html";                    
                 }
                 return view;
             }

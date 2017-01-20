@@ -62,12 +62,14 @@ public class MailServiceImpl implements MailService {
     }
 
     private void validateRequest(String name, String from, String subject, String message) {
-        if (name.trim().length() == 0 && from.trim().length() == 0 && subject.trim().length() == 0 && message.trim().length() == 0) {
-            throw new IllegalArgumentException("All fields are required!");
+        if (name.trim().length() == 0 && from.trim().length() == 0 && subject.trim().length() == 0 && message.trim().length() == 0) {            
+            logger.error("All fields are required!");
+            throw new IllegalArgumentException();
         }
         
         if (from.trim().length() < 6) {
-            throw new IllegalArgumentException("Invalid email address ");
+            logger.error("Invalid email address " + from);
+            throw new IllegalArgumentException();
         }       
     }
 
